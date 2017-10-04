@@ -1,17 +1,17 @@
 {% set name = "funcy" %}
-{% set version = "1.8" %}
-{% set sha256 = "b23d76972890f4e9c7cee540f522b318548b914992015dc5823f2484d46feadf" %}
+{% set version = "1.9.1" %}
+{% set sha256 = "a33ea9ccdc5d81ad68caff20d3b0cc232b15de5574d22c239784facaf567a9bc" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
+  noarch: python
   number: 0
   script: python setup.py install --single-version-externally-managed --record record.txt
 
