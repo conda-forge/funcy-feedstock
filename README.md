@@ -14,12 +14,15 @@ Summary: A collection of fancy functional tools focused on practicality.
 Current build status
 ====================
 
-All platforms: [![Circle CI](https://circleci.com/gh/conda-forge/funcy-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/funcy-feedstock)
+All platforms:
+[![noarch](https://img.shields.io/circleci/project/github/conda-forge/funcy-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/funcy-feedstock)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/funcy/badges/version.svg)](https://anaconda.org/conda-forge/funcy)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/funcy/badges/downloads.svg)](https://anaconda.org/conda-forge/funcy)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-funcy-green.svg)](https://anaconda.org/conda-forge/funcy) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/funcy.svg)](https://anaconda.org/conda-forge/funcy) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/funcy.svg)](https://anaconda.org/conda-forge/funcy) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/funcy.svg)](https://anaconda.org/conda-forge/funcy) |
 
 Installing funcy
 ================
