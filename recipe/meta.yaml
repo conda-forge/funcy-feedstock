@@ -1,6 +1,6 @@
 {% set name = "funcy" %}
-{% set version = "1.10" %}
-{% set sha256 = "215c95e81142d831a0a71a84777268ce852b57e87582c743c662514b85be6bcd" %}
+{% set version = "1.10.2" %}
+{% set sha256 = "95cbcd47b66e1fcc5737ef8f1f66be8626540ed181acaa8b483963d1af860510" %}
 
 package:
   name: {{ name|lower }}
