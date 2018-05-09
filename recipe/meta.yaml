@@ -1,6 +1,6 @@
 {% set name = "funcy" %}
-{% set version = "1.10.1" %}
-{% set sha256 = "c38ef134d34c767b9d631de453e19f710ac0575b9463d55e30f4f93274e089e4" %}
+{% set version = "1.10.2" %}
+{% set sha256 = "95cbcd47b66e1fcc5737ef8f1f66be8626540ed181acaa8b483963d1af860510" %}
 
 package:
   name: {{ name|lower }}
@@ -13,12 +13,12 @@ source:
 build:
   noarch: python
   number: 0
-  script: python setup.py install --single-version-externally-managed --record record.txt
+  script: python -m pip install --no-deps --ignore-installed .
 
 requirements:
   build:
     - python
-    - setuptools
+    - pip
   run:
     - python
 
