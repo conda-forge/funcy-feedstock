@@ -5,7 +5,7 @@ Home: https://github.com/Suor/funcy
 
 Package license: BSD-3-Clause
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: A collection of fancy functional tools focused on practicality.
 

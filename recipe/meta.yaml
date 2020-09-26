@@ -1,6 +1,6 @@
 {% set name = "funcy" %}
-{% set version = "1.14" %}
-{% set sha256 = "75ee84c3b446f92e68a857c2267b15a1b49c631c9d5a87a5f063cd2d6761a5c4" %}
+{% set version = "1.15" %}
+{% set sha256 = "65b746fed572b392d886810a98d56939c6e0d545abb750527a717c21ced21008" %}
 
 package:
   name: {{ name|lower }}
@@ -13,7 +13,7 @@ source:
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
+  script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
 
 requirements:
   host:
@@ -31,7 +31,7 @@ about:
   license: BSD-3-Clause
   license_family: BSD
   license_file: LICENSE
-  summary: 'A collection of fancy functional tools focused on practicality.'
+  summary: A collection of fancy functional tools focused on practicality.
 
   doc_url: http://funcy.readthedocs.io/
   dev_url: https://github.com/Suor/funcy
