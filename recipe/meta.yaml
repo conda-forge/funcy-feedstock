@@ -1,6 +1,6 @@
 {% set name = "funcy" %}
-{% set version = "1.18" %}
-{% set sha256 = "15448d19a8ebcc7a585afe7a384a19186d0bd67cbf56fb42cd1fd0f76313f9b2" %}
+{% set version = "2.0" %}
+{% set sha256 = "3963315d59d41c6f30c04bc910e10ab50a3ac4a225868bfa96feed133df075cb" %}
 
 package:
   name: {{ name|lower }}
@@ -17,10 +17,10 @@ build:
 
 requirements:
   host:
-    - python >=2.7
+    - python >=3.4
     - pip
   run:
-    - python >=2.7
+    - python >=3.4
 
 test:
   imports:

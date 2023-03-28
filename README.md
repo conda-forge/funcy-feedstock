@@ -1,11 +1,11 @@
-About funcy
-===========
+About funcy-feedstock
+=====================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/funcy-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/Suor/funcy
 
 Package license: BSD-3-Clause
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/funcy-feedstock/blob/main/LICENSE.txt)
 
 Summary: A collection of fancy functional tools focused on practicality.
 
