@@ -17,10 +17,10 @@ build:
 
 requirements:
   host:
-    - python >=2.7
+    - python >=3.4
     - pip
   run:
-    - python >=2.7
+    - python >=3.4
 
 test:
   imports:
