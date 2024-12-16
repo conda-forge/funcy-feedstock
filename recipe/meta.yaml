@@ -13,11 +13,12 @@ source:
 build:
   noarch: python
   number: 1
-  script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
+  script: {{ PYTHON }} -m pip install . -vvv
 
 requirements:
   host:
     - python {{ python_min }}
+    - setuptools
     - pip
   run:
     - python >={{ python_min }}
@@ -25,8 +26,11 @@ requirements:
 test:
   requires:
     - python {{ python_min }}
+    - pip
   imports:
     - funcy
+  commands:
+    - pip check
 
 about:
   home: https://github.com/Suor/funcy
