@@ -1,18 +1,18 @@
 {% set name = "funcy" %}
-{% set version = "2.0" %}
-{% set sha256 = "3963315d59d41c6f30c04bc910e10ab50a3ac4a225868bfa96feed133df075cb" %}
+{% set version = "2.1" %}
+{% set sha256 = "8979feb3de7120afd1d00e5a8eae810c1942e4bfbc91697151e9ee1e49f79284" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . -vvv
 
 requirements:
