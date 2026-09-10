@@ -1,0 +1,46 @@
+schema_version: 1
+
+context:
+  version: "2.1"
+
+package:
+  name: funcy
+  version: ${{ version }}
+
+source:
+  url: https://files.pythonhosted.org/packages/source/f/funcy/funcy-${{ version }}.tar.gz
+  sha256: 8979feb3de7120afd1d00e5a8eae810c1942e4bfbc91697151e9ee1e49f79284
+
+build:
+  number: 0
+  noarch: python
+  script: ${{ PYTHON }} -m pip install . -vvv
+
+requirements:
+  host:
+    - python ${{ python_min }}.*
+    - setuptools
+    - pip
+  run:
+    - python >=${{ python_min }}
+
+tests:
+  - python:
+      imports:
+        - funcy
+      pip_check: true
+      python_version:
+        - ${{ python_min }}.*
+        - '*'
+
+about:
+  license: BSD-3-Clause
+  license_file: LICENSE
+  summary: A collection of fancy functional tools focused on practicality.
+  homepage: https://github.com/Suor/funcy
+  repository: https://github.com/Suor/funcy
+  documentation: http://funcy.readthedocs.io/
+
+extra:
+  recipe-maintainers:
+    - synapticarbors
